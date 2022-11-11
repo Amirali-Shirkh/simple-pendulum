@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+<script src="pendulum.js"></script>
+<script src="sketch.js"></script>
+<div style="display: flex; margin-bottom: 20px;">
+    <div>
+        <form>
+            <div>
+                <h3>Pendulum 1</h3>
+                <div>
+                    <select id="angle1">
+                        <option selected value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                        <option value="120">120</option>
+                        <option value="135">135</option>
+                        <option value="150">150</option>
+                    </select>
+                    <label for="angle1">Angel</label>
+                </div>
+                <dive>
+                    <input id="arm1" max="550" min="50"
+                           name="arm" type="range" value="105">
+                    <label for="arm1">Arm length</label>
+                </dive>
+                <dive>
+                    <input id="mass1" max="10" min="1"
+                           name="mass" type="range" value="5">
+                    <label for="mass1">mass</label>
+                </dive>
+            </div>
+            <div>
+                <h3>Pendulum 2</h3>
+                <div>
+                    <select id="angle2">
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                        <option value="120">120</option>
+                        <option selected value="135">135</option>
+                        <option value="150">150</option>
+                    </select>
+                    <label for="angle2">Angel</label>
+                </div>
+                <dive>
+                    <input id="arm2" max="550" min="50"
+                           name="arm" type="range" value="300">
+                    <label for="arm2">Arm length</label>
+                </dive>
+                <dive>
+                    <input id="mass2" max="10" min="1"
+                           name="mass" type="range" value="4">
+                    <label for="mass2">mass</label>
+                </dive>
+            </div>
+            <div>
+                <h3>Pendulum 3</h3>
+                <div>
+                    <select id="angle3">
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                        <option value="120">120</option>
+                        <option selected value="135">135</option>
+                        <option value="150">150</option>
+                    </select>
+                    <label for="angle3">Angel</label>
+                </div>
+                <dive>
+                    <input id="arm3" max="550" min="50"
+                           name="arm" type="range" value="105">
+                    <label for="arm3">Arm length</label>
+                </dive>
+                <dive>
+                    <input id="mass3" max="10" min="1"
+                           name="mass" type="range" value="2">
+                    <label for="mass3">mass</label>
+                </dive>
+            </div>
+            <div>
+                <h3>Pendulum 4</h3>
+                <div>
+                    <select id="angle4">
+                        <option value="30">30</option>
+                        <option selected value="45">45</option>
+                        <option value="60">60</option>
+                        <option value="120">120</option>
+                        <option value="135">135</option>
+                        <option value="150">150</option>
+                    </select>
+                    <label for="angle4">Angel</label>
+                </div>
+                <dive>
+                    <input id="arm4" max="550" min="50"
+                           name="arm" type="range" value="105">
+                    <label for="arm4">Arm length</label>
+                </dive>
+                <dive>
+                    <input id="mass4" max="10" min="1"
+                           name="mass" type="range" value="3">
+                    <label for="mass4">mass</label>
+                </dive>
+            </div>
+            <div>
+                <h3>Pendulum 5</h3>
+                <div>
+                    <select id="angle5">
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60</option>
+                        <option value="120">120</option>
+                        <option value="135">135</option>
+                        <option selected value="150">150</option>
+                    </select>
+                    <label for="angle1">Angel</label>
+                </div>
+                <dive>
+                    <input id="arm5" max="550" min="50"
+                           name="arm" type="range" value="500">
+                    <label for="arm5">Arm length</label>
+                </dive>
+                <dive>
+                    <input id="mass5" max="10" min="1"
+                           name="mass" type="range" value="8">
+                    <label for="mass5">mass</label>
+                </dive>
+            </div>
+            <div>
+                <h4>Change configuration and restart</h4>
+                <button onclick="updatePendulums()" style="padding: 10px;" type="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div style="display: flex; padding-left: 10px;">
+        <div style="margin: 2px;">
+            <button onclick="pause()" style="padding: 10px;">Pause</button>
+        </div>
+        <div style="margin: 2px;">
+            <button onclick="resume()" style="padding: 10px;">Resume</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
