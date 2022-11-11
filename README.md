@@ -35,6 +35,6 @@ Once the server is running successfully, navigate to `pendulums_frontend` and op
 You should see pendulums running already configured. You can change the configuration and restart by pressing `submit`.
 
 ## Some context
-Go to `pendulums_api` directory and install all dependencies:
+To be updated soon
 
 
